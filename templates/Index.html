@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mike Portfolio</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="styles.css")}}">
+    <link rel="icon" href="{{url_for("static", filename="MikeLogo.png")}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div id="preloader"></div>
+
+    <header class="header">
+        <div class="background"></div>
+        <a href="#" class="logo">Mike.</a>
+
+
+        <div class="menu-toggle" onclick="toggleSidebar()">
+            <i class='bx bx-menu' id="menuIcon"></i>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/mike.deeb.733/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/mike.deeb.733/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/mike-deeb-816b61168/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+        </nav>
+        
+    </header>
+
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm<span> Mike Deeb</span></h1>
+            <h3>A Programmer</h3>
+            <p>Hi, I'm a passionate Full-Stack Web Developer with expertise in building dynamic
+                and responsive web applications. I specialize in both front-end and back-end
+                development, crafting seamless user experiences with HTML, CSS, and JavaScript,
+                while leveraging powerful frameworks like Flask and Django for robust backend
+                solutions. With a strong foundation in databases, including SQL and SQLite, 
+                I develop efficient and scalable applications that meet modern web standards.
+
+                Explore my projects and feel free to reach out—let’s build something amazing together! </p>
+            <div class="btn-box">
+                <a href="#contact">Hire Me</a>
+                <a href="https://wa.me/+9647518617376" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/mike.deeb.733/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/mike.deeb.733/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/mike-deeb-816b61168/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="overlay"></div>
+
+        <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me!</span></h2>
+        <div class="about-img">
+            <img src="{{url_for("static", filename="mike.jpg")}}" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Programmer!</h3>
+            <p>
+                I have strong skills in web development, graphic design, and networking,
+                with the ability to create responsive websites, engaging visual content,
+                and manage network infrastructure. Additionally, I am highly proficient
+                in data entry, ensuring accuracy and efficiency in handling information.
+                I also possess excellent translation skills, enabling me to translate seamlessly between Arabic and English.
+            </p>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                 
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar'></i>2020 - 2021</div>
+                            <h3>Graphic Design Certificate - Online</h3>
+                            <p>
+                                This certification program provided a solid foundation in graphic design principles, including typography, color theory, and visual communication. Through practical projects, I gained proficiency in essential tools like Adobe Photoshop and Illustrator, enhancing my design capabilities. The course also delved into branding, layout design, and user experience (UX), empowering me to craft compelling and effective designs across digital and print media.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar'></i>2021 - 2022</div>
+                            <h3>Networking Certificate - Online</h3>
+                            <p>
+                                This Cisco Networking Certificate validates expertise in designing, configuring, and managing computer networks. It covers networking essentials such as routing, switching, network security, and troubleshooting. Gaining hands-on experience with Cisco technologies, the certification highlights proficiency in network protocols (TCP/IP, VLANs, OSPF, etc.) and wireless networking. This credential is essential for professionals pursuing careers in network administration and cybersecurity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar'></i>2022 - 2023</div>
+                            <h3>Bachelor Degree - CUE</h3>
+                            <p>
+                                I completed my Bachelor’s Degree in Computer Science from CUE, where I developed a strong understanding of software development, algorithms, and databases. I worked with a variety of technologies, including HTML, CSS, JavaScript, Flask, Django, SQL, and SQLite, to build innovative web applications. The curriculum also explored data structures, cybersecurity, artificial intelligence, and full-stack development, preparing me to create robust software solutions.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                 
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar'></i>2020 - 2021</div>
+                            <h3>Software Development - Restaurant</h3>
+                            <p>
+                                I developed a Restaurant Management System to optimize operations across multiple locations. The system streamlines order management, inventory tracking, staff coordination, and customer reservations, ensuring smooth daily activities. Key features include centralized multi-branch control, real-time order management, automated inventory updates, secure user roles, and analytics to monitor performance, enhancing efficiency and customer satisfaction.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar'></i>2021 - 2022</div>
+                            <h3>Graphic Designer - Instagram</h3>
+                            <p>
+                                As a Graphic Designer for Instagram, I specialize in creating engaging, visually impactful content. My designs help brands develop strong, memorable identities through cohesive visuals tailored to social media platforms. I focus on strategic design elements, typography, and layouts that not only capture attention but also encourage user engagement and brand growth on Instagram. And also created my own page that got extremely high followers per day.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar'></i>2022 - 2024</div>
+                            <h3>Web Developer - Company</h3>
+                            <p>
+                                As a Web Developer at Promars Agency, I build responsive, user-friendly websites and applications. My skills in HTML, CSS, JavaScript, and various frameworks allow me to create smooth, functional digital experiences. Collaborating with designers and clients, I ensure high-performance websites that are fast, scalable, and optimized for usability. Staying current with industry trends, I focus on delivering innovative solutions that improve user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading" style="padding-top: 3rem;">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                 
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+                 
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>App Design <span>40%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Graphic Design <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Data Entry <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form  id="myForm" onsubmit="submit_feedback(event)">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Email Address" id="name" name="email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" placeholder="Mobile Number" name="phone_number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" name="email_subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn"><a>Submit</a></button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Mike | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function submit_feedback(event) {
+            event.preventDefault();  // Prevent form from refreshing the page
+            
+            const form = document.getElementById('myForm');
+            const formData = new FormData(form);
+    
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone_number: formData.get('phone_number'),
+                email_subject: formData.get('email_subject'),
+                message: formData.get('message')
+            };
+
+            const url = "http://127.0.0.1:5000/submit_feedback"
+            fetch('/submit_feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                // Optionally, reset the form
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting your feedback.');
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Grab all the sections and links
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('header nav a');
+
+            // Scroll event listener
+            window.addEventListener('scroll', function() {
+                let currentSection = "";
+                
+                // Loop through sections to find which one is currently in view
+                sections.forEach(sec => {
+                    const top = window.scrollY;
+                    const offset = sec.offsetTop - 110;
+                    const height = sec.offsetHeight;
+                    const id = sec.getAttribute('id');
+                    
+                    if (top >= offset && top < offset + height) {
+                        currentSection = id;
+                    }
+                });
+
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to the corresponding link
+                if (currentSection) {
+                    document.querySelector(`header nav a[href="#${currentSection}"]`).classList.add('active');
+                }
+            });
+
+            // Click event listener for manual navigation
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    // Remove active class from all links
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+
+                    // Add active class to the clicked link
+                    event.target.classList.add('active');
+                });
+            });
+        });
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        });
+
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let menuIcon = document.getElementById("menuIcon");
+            sidebar.classList.toggle("active");
+            menuIcon.classList.toggle("bx-menu");
+            menuIcon.classList.toggle("bx-x");
+        }
+
+    </script>
+
+    
+</body>
+</html>
